@@ -5,7 +5,7 @@ enum CommandType {
     KEYPRESS,
     SPECIAL_KEY,
     MEDIA,
-    TEXT,
+    TEXT
 }
 
 const KeyboardPlugin: Plugin = {
