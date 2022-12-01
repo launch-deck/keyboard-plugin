@@ -1,0 +1,16 @@
+{
+    "name": "@launch-deck/keyboard-plugin",
+    "version": "1.0.0",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "scripts": {
+        "postinstall": "tsc"
+    },
+    "dependencies": {
+        "@nut-tree/nut-js": "^2.3.0",
+        "@launch-deck/common": "latest"
+    },
+    "devDependencies": {
+        "typescript": "^4.8.4"
+    }
+}
