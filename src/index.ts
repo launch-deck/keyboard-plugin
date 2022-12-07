@@ -8,7 +8,7 @@ enum CommandType {
     TEXT
 }
 
-const KeyboardPlugin: Plugin = {
+module.exports = {
 
     async handleCommand(command: Command): Promise<void> {
 
@@ -140,7 +140,7 @@ const KeyboardPlugin: Plugin = {
 
         return Promise.resolve(commands);
     }
-}
+} as Plugin;
 
 function buildCommand(type: CommandType, name: string, options?: CommandInputSelectionOption[]): Command {
     return {
@@ -173,5 +173,3 @@ function buildSelectionOption(name: string, key: Key): CommandInputSelectionOpti
         data: key.valueOf().toString()
     }
 }
-
-export default KeyboardPlugin;
